@@ -1,0 +1,83 @@
+{
+  // 配置名称 (用于菜单显示)
+  "NAME": "开发环境配置 (Development)",
+
+  // 配置编码 (用于脚本识别)
+  "CODE": "dev",
+
+  // 应用变量配置 (注入到 process.env.VUE_APP_CONFIG)
+  "APP_CONFIG": {
+    // App 标题
+    "VITE_APP_TITLE": "Flux Uni Dev",
+
+    // API 接口地址
+    "VITE_API_BASE_URL": "https://dev-api.example.com",
+
+    // 主题配置 (对应 src/theme/ 下的目录名，用于动态打包)
+    "THEME_NAME": "theme-blue",
+
+    // 调试开关
+    "VCONSOLE": true
+  },
+
+  // Manifest 覆盖配置 (深度合并到 manifest.json)
+  "MANIFEST": {
+    "name": "Flux Uni (Dev)",
+    "appid": "__UNI__123456",
+    "description": "企业级框架开发环境",
+    "versionName": "1.0.0",
+    "versionCode": "100",
+    "transformPx": false,
+    /* 5+App特有相关 */
+    "app-plus": {
+      "usingComponents": true,
+      "nvueStyleCompiler": "uni-app",
+      "compilerVersion": 3,
+      "splashscreen": {
+        "alwaysShowBeforeRender": true,
+        "waiting": true,
+        "autoclose": true,
+        "delay": 0
+      },
+      /* 模块配置 */
+      "modules": {}
+    },
+    /* 小程序特有相关 */
+    "mp-weixin": {
+      "appid": "wx1234567890abcdef", // 微信小程序 AppID
+      "setting": {
+        "urlCheck": false,
+        "es6": true,
+        "postcss": true,
+        "minified": true
+      },
+      "usingComponents": true,
+      "permission": {
+        "scope.userLocation": {
+          "desc": "您的位置信息将用于展示附近的服务"
+        }
+      }
+    },
+    "mp-alipay": {
+      "usingComponents": true
+    },
+    "mp-baidu": {
+      "usingComponents": true
+    },
+    "mp-toutiao": {
+      "usingComponents": true
+    },
+    /* H5特有相关 */
+    "h5": {
+      "title": "Flux Uni Dev System",
+      "router": {
+        "mode": "hash",
+        "base": "./"
+      },
+      "devServer": {
+        "port": 5173,
+        "disableHostCheck": true
+      }
+    }
+  }
+}

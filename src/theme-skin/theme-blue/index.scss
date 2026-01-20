@@ -1,0 +1,10 @@
+/* 蓝色主题样式覆盖 */
+.theme-blue {
+  .page-container {
+    background-color: var(--skin-bg-color);
+  }
+
+  .text-primary {
+    color: var(--skin-text-color);
+  }
+}

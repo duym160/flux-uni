@@ -1,0 +1,11 @@
+/* 全局 uView 主题色变量定义 (将被注入到 App.vue 或 uni.scss) */
+:root {
+  --u-primary: #3c9cff;
+  --u-warning: #f9ae3d;
+  --u-success: #5ac725;
+  --u-error: #f56c6c;
+  --u-info: #909399;
+
+  /* 自定义组件主题色映射变量 */
+  --app-primary-color: var(--u-primary);
+}

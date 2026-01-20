@@ -19,4 +19,5 @@ dist
 *.ntvs*
 *.njsproj
 *.sln
-*.sw?
+*.sw?src/manifest.json
+src/pages.json
