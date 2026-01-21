@@ -44,7 +44,7 @@
     },
     /* 小程序特有相关 */
     "mp-weixin": {
-      "appid": "wx1234567890abcdef", // 微信小程序 AppID
+      "appid": "", // 微信小程序 AppID
       "setting": {
         "urlCheck": false,
         "es6": true,
